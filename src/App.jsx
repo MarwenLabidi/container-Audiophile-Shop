@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { StyledContainer } from "./setup/styled-components/styled_component";
+import GlobalStyle from "./setup/styled-components/GlobalStyle";
 
 function App() {
-        const [count, setCount] = useState(0);
-
-        return <main className='App'>container</main>;
+        return (
+                <>
+                        <GlobalStyle />
+                        <StyledContainer>container</StyledContainer>
+                </>
+        );
 }
 
 export default App;
