@@ -1,7 +1,9 @@
 import { StyledContainer } from "./setup/styled-components/styled_component";
 import GlobalStyle from "./setup/styled-components/GlobalStyle";
+//import header component App
+// import Header from 'header/Header'
 
-function App() {
+function Apps() {
         return (
                 <>
                         <GlobalStyle />
@@ -10,4 +12,4 @@ function App() {
         );
 }
 
-export default App;
+export default Apps;
