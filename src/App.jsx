@@ -8,6 +8,8 @@ import mount from "headerSubApp/HeaderApp";//name/exposeName
 function Apps() {
         const headerRef=useRef(null)
         useEffect(()=>{
+                console.log('mount: ', mount);
+                console.log('headerRef: ', headerRef);
                 mount(headerRef.current)
         },[])
         return (
