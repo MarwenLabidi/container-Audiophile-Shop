@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(),federation({
     name: "container",
     remotes:{
-      headerSubApp: "headerSubApp@http://localhost:3001/remoteEntry.js",
+      headerSubApp: "http://localhost:5001/assets/remoteEntry.js",
     },
     shared: ["react", "react-dom"],
   })],
