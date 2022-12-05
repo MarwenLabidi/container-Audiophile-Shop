@@ -2,7 +2,7 @@ import { StyledContainer } from "./setup/styled-components/styled_component";
 import GlobalStyle from "./setup/styled-components/GlobalStyle";
 import { useRef,useEffect } from "react";
 //import sub app header module federation
-import mount from "headerSubApp/HeaderApp";//name/exposeName
+import {mount} from "headerSubApp/HeaderApp";//name/exposeName
 
 
 function Apps() {
