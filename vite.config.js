@@ -9,6 +9,9 @@ export default defineConfig({
     name: "container",
     remotes:{
       headerSubApp: "http://localhost:5001/assets/remoteEntry.js",
+      mainSubApp: "http://localhost:5002/assets/remoteEntry.js",
+      footerSubApp: "http://localhost:5003/assets/remoteEntry.js",
+      // navigationSubApp: "http://localhost:5004/assets/remoteEntry.js",
     },
     shared: ["react", "react-dom"],
   })],
