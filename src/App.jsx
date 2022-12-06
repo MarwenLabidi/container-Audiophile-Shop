@@ -5,24 +5,35 @@ import { useRef,useEffect } from "react";
 import {mountHeader} from "headerSubApp/HeaderApp";//name/exposeName
 import {mountMain} from "mainSubApp/MainApp";
 import {mountFooter} from "footerSubApp/FooterApp";
+import {mountNavigation} from "navigationSubApp/NavigationApp";
+
 
 
 function Apps() {
         const headerRef=useRef(null)
         const mainRef=useRef(null)
         const footerRef=useRef(null)
+        const navigationRef=useRef(null);
+
         useEffect(()=>{
                 mountHeader(headerRef.current);
                 mountMain(mainRef.current);
                 mountFooter(footerRef.current);
+                mountNavigation(navigationRef.current)
+
         },[])
         return (
                 <>
                         <GlobalStyle />
                         <StyledContainer>
-                                <div ref={headerRef}></div>
-                                <div ref={mainRef}></div>
+                                <div ref={headerRef}>
+
+                                </div>
+                                <div ref={mainRef}>
+
+                                </div>
                                 <div ref={footerRef}></div>
+                                <div ref={navigationRef}></div>
                         </StyledContainer>
                 </>
         );
