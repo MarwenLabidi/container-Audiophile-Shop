@@ -26,14 +26,12 @@ function Apps() {
                 <>
                         <GlobalStyle />
                         <StyledContainer>
-                                <div ref={headerRef}>
-
-                                </div>
-                                <div ref={mainRef}>
-
+                                <div ref={headerRef}></div>
+                                <div>
+                                        <div ref={navigationRef}></div>
+                                        <div ref={mainRef}></div>
                                 </div>
                                 <div ref={footerRef}></div>
-                                <div ref={navigationRef}></div>
                         </StyledContainer>
                 </>
         );
